@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+
+<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!-- Font Awesome cdnjs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Font Awesome personalized link -->
+    <script src="https://kit.fontawesome.com/b4b877a0fc.js" crossorigin="anonymous"></script>
+
+    <!-- Icons Materialized -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!--Import Google Icon Font-->
+    <link href= "https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+
+<!-- Custom CSS -->
+    <link rel="stylesheet" href="style1.css">
+
+    <title>Grid</title>
+
+</head>
+<body>
+    
+    <h1 class="center purple-text">Grid</h1>
+    <div class="divider"></div>
+        <div class="container"><br>
+            <div class="row">
+                <div class="col s9">
+                    <p>We are using a standard 12 column fluid responsive grid system. The grid helps you layout your page in an ordered, easy fashion.</p>
+
+<!-- Container scrollspy-->
+                    <div id="container" class="section scrollspy">
+                        <h3 class="purple-text text-lighten-2">Container</h3>
+                    </div>
+
+                    <p>The container class is not strictly part of the grid but is important in laying out content. It allows you to center your page content. The container class is set to ~70% of the window width. It helps you center and contain your page content. We use the container to contain our body content.</p>
+                    <p class="flow-text grey-text"><u>Demo</u></p>
+                    <p>Try the button below to see what the page looks like without containers.</p><br>
+                        <div class="row grey"> <br>
+                            <div class="col s5 left">
+                                <a href="" class="btn waves-effect waves-dark">Turn off containers</a> <br><br>
+                                <img src="images/screenshot1.PNG" alt="" class="responsive-img">
+                            </div>
+                            <div class="col s5 right">
+                                <a href="" class="btn waves-effect waves-dark">Turn on containers</a> <br><br>
+                                <img src="images/screenshot2.PNG" alt="" class="responsive-img">
+                            </div><br>
+                        </div> 
+                    <p><p>To add a container just put your content inside a <'div"> tag with a container class. Here's an example of how your page might be set up.</p></p>  <br>
+
+<!-- Introduction scrollspy-->
+
+                    <div id="introduction" class="section scrollspy">
+                        <h3 class="purple-text text-lighten-2">Intoduction</h3>
+                    </div>
+                    <p>Take a look at this section to quickly understand how the grid works!</p>
+                    <p class="flow-text grey-text">12 columns</p>
+                    <p>Our standard grid has 12 columns. No matter the size of the browser, each of these columns will always have an equal width.</p>
+                    <div class="row">
+                        <div class="col s12 m3 l6 xl1 card-panel blue center ">1</div>
+                        <div class="col s12 m3 l6 xl1 card-panel cyan center ">2</div>
+                        <div class="col s12 m3 l6 xl1 card-panel grey center ">3</div>
+                        <div class="col s12 m3 l6 xl1 card-panel pink center ">4</div>
+                        <div class="col s12 m3 l6 xl1 card-panel green center ">5</div>
+                        <div class="col s12 m3 l6 xl1 card-panel yellow center ">6</div>
+                        <div class="col s12 m3 l6 xl1 card-panel blue center ">7</div>
+                        <div class="col s12 m3 l6 xl1 card-panel tabs-transparent center ">8</div>
+                        <div class="col s12 m3 l6 xl1 card-panel grey center ">9</div>
+                        <div class="col s12 m3 l6 xl1 card-panel pink center ">10</div>
+                        <div class="col s12 m3 l6 xl1 card-panel green center ">11</div>
+                        <div class="col s12 m3 l6 xl1 card-panel yellow center ">12</div>
+                    </div>
+                    <p>Note: For now, just know that the s1 stands for small-1 which in plain English means "1 column on small screens".</p>
+
+                    <p class="flow-text grey-text"><u>Columns live inside Rows</u></p>
+                    <p>Remember when you are creating your layout that all columns must be contained inside a row and that you must add the col class to your inner divs to make them into columns</p>
+                    
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="video-container">
+                                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fweb.facebook.com%2FRonickSalongaMontoya%2Fvideos%2F252877540934784%2F&show_text=false&width=357&t=0" width="357" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                            </div> <br><br>
+                           
+                            <div class="col s6 left">
+                                <div class="card-panel grey">
+                                    <img src="images/image1.jpg" alt="" class="responsive-img"> <p class="black-text center">6-columns (one-half)</p>
+                                </div>
+                            </div>
+
+                            <div class="col s6 right">
+                                <div class="card-panel pink">
+                                    <img src="images/image2.jpg" alt="" class="circle responsive-img"> <p class="white-text center">6-columns (one-half)</p>
+                                </div>
+                            </div>                          
+                        </div>
+                    </div><br>
+
+<!-- Offsets scrollspy-->
+
+                    <div id="offsets" class="section scrollspy">
+                        <h3 class="purple-text text-lighten-2">Offsets</h3>
+                    </div>
+                    <p>To offset, simply add offset-s2 to the class where s signifies the screen class-prefix (s = small, m = medium, l = large) and the number after is the number of columns you want to offset by.</p>
+                    <div class="row s12">
+                        <div class="col s12">
+                            <nav class="navbar-fixed">
+                                <div class="container">
+                                    <div class="nav-wrapper">
+                                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                            <li>
+                                                <a href="#" target="_self">Login</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" target="_self">Profile</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" target="_self">Settings</a>
+                                            </li>
+                                                <li>
+                                                <a href="" class="dropdown-trigger" data-target="dropdown1">
+                                                    <i class="material-icons">arrow_drop_down</i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s9 offset-s3">
+                            <nav class="navbar-fixed">
+                                <div class="container">
+                                    <div class="nav-wrapper">
+                                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                            <li>
+                                                <a href="#" target="_self">Login</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" target="_self">Profile</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" target="_self">Settings</a>
+                                            </li>
+                                                <li>
+                                                <a href="" class="dropdown-trigger" data-target="dropdown1">
+                                                    <i class="material-icons">arrow_drop_down</i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s6 offset-s6">
+                            <nav class="navbar-fixed">
+                                <div class="container">
+                                    <div class="nav-wrapper">
+                                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                            <li>
+                                                <a href="#" target="_self">Login</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" target="_self">Profile</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div><br>
+
+<!-- Push and Pull Scrollspy-->
+            
+                    <div id="pushandpull" class="section scrollspy">
+                        <h3 class="purple-text text-lighten-2">Push and Pull</h3>
+                    </div>        
+                    <p>You can easily change the order of your columns with push and pull. Simply add push-s2 or pull-s2 to the class where s signifies the screen class-prefix (s = small, m = medium, l = large) and the number after is the number of columns you want to push or pull by.</p>
+                    <div class="row">
+                        <div class="col s7 push-5">
+                            <div class="card-panel purple">
+                                <h5 class="black-text">This div is 7-columns wide on pushed to the right by 5-columns.</h5>
+                            </div>
+                        </div>
+                        <div class="col s5 pull-5">
+                            <div class="card-panel purple">
+                                <h5 class="black-text">5-columns wide pulled to the left by 7-columns.</h5>                        
+                            </div>
+                        </div>
+                    </div><br>
+
+<!-- Creating Layouts scrollspy-->               
+                
+                    <div id="creatingLayouts" class="section scrollspy">
+                        <h3 class="purple-text text-lighten-2">Creating Layouts</h3>
+                    </div>
+                    <p>Here we will show you how to create some commonly used layouts with our grid system. Hopefully these will get you more comfortable with laying out elements. To keep these demos simple, the ones here will not be responsive.</p>
+            
+                    <div class="row">
+                        <div class="col s6 left">
+                            <p class="flow-text grey center">Section</p>
+                            <p>The section class is used for simple top and bottom padding. Just add the section class to your div's containing large blocks of content.</p>
+                        </div>
+                        <div class="col s6 right">
+                            <p class="flow-text grey center">Divider</p>
+                            <p>Dividers are 1 pixel lines that help break up your content. Just add the divider to a div in between your content.</p>
+                        </div>
+                    </div>
+                        
+                </div>
+
+<!--Column S3-->
+
+                <div class="col s3 hide-on-small-only">
+                    <img src="images/image5.jpg" alt="" class="right responsive-img stock-img">
+                    <h6 class="purple-text text-lighten-1 a1">Get 10 Free Adobe Stock photos.Start downloading amazing royalty-free stock photos today</h6>
+                    <h6 class="center black-text text-lighten-1">ads via carbon</h6><br><br>
+
+                    <div class="container">
+                        <ul class="section table-of-contents">
+                            <li><a href="#container" class="active">Container</a></li>
+                            <li><a href="#introduction" class="active">Introduction</a></li>
+                            <li><a href="#offsets" class="active">Offsets</a></li>
+                            <li><a href="#pushandpull" class="active">Push and Pull</a></li>
+                            <li><a href="#creatingLayouts" class="active">Creating Layouts</a></li>
+                        </ul>                
+                    </div>
+
+                </div>
+            </div>
+        </div> 
+
+    <div style="height:1000px"></div>
+
+<!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        $('_scrollspy').scrollSpy();
+    });
+    </script>
+
+</body>
+</html>

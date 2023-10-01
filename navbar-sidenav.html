@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+
+    <!-- Font Awesome personalized link -->
+    <script src="https://kit.fontawesome.com/b4b877a0fc.js" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome cdnjs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style1.css">
+
+    <!-- Icons Materialized -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Navbar & Sidenav</title>
+</head>
+
+<body>
+    
+    <nav class="grey navbar-fixed">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="https://web.telegram.org/k/" class="center brand-logo" target="_self">
+                    <i class="fa-brands fa-telegram black-text"></i></a>
+                    <a href="" class="sidenav-trigger show-on-large" data-target="slide-out">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a href="https://fontawesome.com/kits" target="_self">Login</a>
+                    </li>
+                    <li>
+                        <a href="https://fontawesome.com/icons" target="_self">Profile</a>
+                    </li>
+                    <li>
+                        <a href="https://fontawesome.com/docs" target="_self">Settings</a>
+                    </li>
+                        <li>
+                            <a href="" class="dropdown-trigger" data-target="dropdown1">
+                                <i class="material-icons">arrow_drop_down</i>
+                            </a>
+                        </li>
+                </ul>
+
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li>
+                <a href="#!">One</a>
+            </li>
+            <li>
+                <a href="#!">Two</a>
+            </li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li>
+                <a href="#!">Three</a>
+            </li>
+        </ul>
+                <div class="nav-content">
+                    <ul class="tabs tabs-transparent">
+                        <li class="tab">
+                            <a href="#test1">Test1</a>
+                        </li>
+                        <li class="tab">
+                            <a href="#test2">Test2</a>
+                        </li>
+                        <li class="tab">
+                            <a href="#test3">Test 3</a>
+                        </li>
+                        <li class="tab">
+                            <a href="#test4">Test 4</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <h1 class="center purple-text">Navbar</h1>
+    <div class="divider pink"> </div> <br>
+    
+    <div class="container">
+        <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.</p>
+        <h3 class="purple-text text-lighten 2">Right Aligned Links</h3>
+        <p>To right align your navbar links, just add a right class to your <'ul'> that contains them.</p>
+        <nav class="powder blue grey-lighten-2">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="https://fontawesome.com/" class="brand-logo" target="_self">
+                        <i class="fa-brands fa-font-awesome"></i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="https://fontawesome.com/kits" target="_self">Kits</a>
+                        </li>
+                        <li><a href="https://fontawesome.com/icons" target="_self">Icons</a>
+                        </li>
+                        <li><a href="https://fontawesome.com/docs" target="_self">Docs</a>
+                        </li>
+                        <li><a href="https://fontawesome.com/plans" target="_self">Plans</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> <br><br>
+
+        <h3 class="purple-text text-lighten 2">Left Aligned Links</h3>
+        <p>To left align your navbar links, just add a left class to your <'ul'> that contains them.</p>
+        <nav class="grey">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="https://www.youtube.com/" class="right brand-logo" target="_self">
+                        <i class="fa-brands fa-youtube dark red-text"></i>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="https://fontawesome.com/kits" target="_self">Home</a>
+                        </li>
+                        <li><a href="https://fontawesome.com/icons" target="_self">History</a>
+                        </li>
+                        <li><a href="https://fontawesome.com/docs" target="_self">Subcriptions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> <br><br>
+
+        <h3 class="purple-text text-lighten 2">Centering the logo</h3>
+        <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your <'a class="brand-logo'>. You will have to make sure yourself that links do not overlap if you use this.</p>
+        <nav class="light pink">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="https://www.linkedin.com/" class="center brand-logo" target="_self">
+                        <i class="fa-brands fa-linkedin"></i>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="https://www.linkedin.com/feed/" target="_self">Home</a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/jobs/" target="_self">Jobs</a>
+                        </li> 
+                        <li><a href="https://www.linkedin.com/mynetwork/" target="_self">My Network</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> <br><br>
+
+        <h3 class="purple-text text-lighten 2">Active Items</h3>
+        <p>Add active class to your li tags to denote the current page.</p>
+        <nav class="powder blue grey-lighten-2">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="https://www.blogger.com/" class="center brand-logo orange-text" target="_self">
+                        <i class="fa-brands fa-blogger"></i>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="https://www.blogger.com/blog/posts/1473283659699565222?hl=en&tab=jj" target="_self">Posts</a>
+                        </li>
+                        <li><a href="https://www.blogger.com/blog/layout/1473283659699565222?hl=en" target="_self">Layout</a>
+                        </li> 
+                        <li class="active"><a href="https://www.blogger.com/blog/themes/1473283659699565222?hl=en" target="_self">Themes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> <br><br>
+        
+        <h3 class="purple-text text-lighten 2">Extended Navbar with Tabs</h3>
+        <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+
+        <!-- Navbar Extended-->    
+        <nav class="grey nav-extended">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://web.telegram.org/k/" class="center brand-logo" target="_self">
+                        <i class="fa-brands fa-telegram black-text"></i></a>
+                        <a href="" class="sidenav-trigger show-on-large" data-target="slide-out">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+                            <a href="https://fontawesome.com/kits" target="_self">Login</a>
+                        </li>
+                        <li>
+                            <a href="https://fontawesome.com/icons" target="_self">Profile</a>
+                        </li>
+                        <li>
+                            <a href="https://fontawesome.com/docs" target="_self">Settings</a>
+                        </li>
+                    </ul>
+                            <div class="nav-content">
+                                <ul class="tabs tabs-transparent">
+                                    <li class="tab">
+                            <a href="#test1">Test1</a>
+                                    </li>
+                                    <li class="tab">
+                            <a href="#test2">Test2</a>
+                                    </li>
+                                    <li class="tab">
+                            <a href="#test3">Test 3</a>
+                                    </li>
+                                    <li class="tab">
+                            <a href="#test4">Test 4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                </div>
+            </div>
+        </nav> <br><br>
+
+        <!-- Sidenav Structure -->
+        <ul class="sidenav" id="slide-out">
+            <li class="active">
+                <a href="https://fontawesome.com/kits" target="_self">Login</a>
+            </li>
+            <li class="active"
+                ><a href="https://fontawesome.com/icons" target="_self">Profile</a>
+            </li>
+            <li class="active">
+                <a href="https://fontawesome.com/docs" target="_self">Settings</a>
+            </li>           
+        </ul>
+       
+        <!-- Tabs Structure-->
+        <div class="row">
+            <div class="col s6" id="test1">
+                <div class="card">
+                    <div class="card content">
+                        <p class="center">Welcome on Telegram</p>  
+                        <img src="images/image1.jpg" alt="" class="circle responsive-img">                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+            <div class="col s7" id="test2">
+                <div class="card">
+                    <div class="card content">
+                        <p class="center">Welcome on Telegram</p>  
+                        <img src="images/image2.jpg" alt="" class="materialboxed responsive-img">                    
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s7" id="test3">
+                <div class="card">
+                    <div class="card content">
+                        <p class="center">Welcome on Telegram</p>  
+                        <img src="images/image3.jpg" alt="" class="circle responsive-img">                    
+                    </div>
+                </div>
+            </div>
+    
+
+            <div class="col s7" id="test4">
+                <div class="card">
+                    <div class="card content">
+                        <p class="center">Welcome on Telegram</p>  
+                        <img src="images/image4.jpg" alt="" class="materialboxed responsive-img">                    
+                    </div>
+                </div>
+            </div>         
+
+    </div>
+    <div style="height:900px"></div>
+
+
+        <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <Script>
+            $(document).ready(function() {
+            //Tabs Init
+                $('.tabs').tabs();
+
+            //Sidenav Init
+                $('.sidenav').sidenav({  
+                    inDuration:1000,
+                    outDuration:1000
+                });
+
+            
+            //Dropdown Init
+                $('.dropdown-trigger').dropdown();
+            });
+    </Script>
+            
+    
+</body>
+</html>
